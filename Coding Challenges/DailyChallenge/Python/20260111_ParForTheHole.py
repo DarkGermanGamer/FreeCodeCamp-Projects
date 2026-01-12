@@ -12,4 +12,4 @@ def golf_score(par, strokes):
     elif strokes == par + 2:
         return "Double bogey"
 
-    return par
+    return strokes

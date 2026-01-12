@@ -1,22 +1,12 @@
 function golfScore(par, strokes) {
-  if(strokes == 1) {
-    return "Hole in one!";
-  }
-  else if(strokes == par - 2) {        
-    return "Eagle";
-  }
-  else if(strokes == par - 1) { 
-    return "Birdie";       
-  }
-  else if(strokes == par) {  
-    return "Par";      
-  }
-  else if(strokes == par + 1) { 
-    return "Bogey";       
-  }
-  else if(strokes == par + 2) { 
-    return "Double bogey";       
+  switch(strokes) {
+    case 1: return "Hole in one!";
+    case par - 2: return "Eagle";
+    case par - 1: return "Birdie";
+    case par: return "Par";
+    case par + 1: return "Bogey";
+    case par + 2: return "Double bogey";
   }
   
-  return par;
+  return strokes;
 }
