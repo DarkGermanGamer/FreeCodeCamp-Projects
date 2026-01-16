@@ -43,8 +43,3 @@ def view_settings(settings):
             message += f'{key.title()}: {value}\n'
     
     return message
-
-test_settings = {'testkey': 'testvalue', 'theme': 'light'}
-
-print(add_setting(test_settings, ('volume', 'high')))
-print(delete_setting(test_settings, 'theme'))
