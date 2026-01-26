@@ -4,7 +4,6 @@ function resolutionStreak(days) {
   const readGoal = 5;
 
   let streak = 0;
-  let message;
 
   for(let day = 0; day < days.length; day++) {
     let dayResult = days[day];
@@ -21,11 +20,9 @@ function resolutionStreak(days) {
   }
 
   if(streak == days.length) {
-    message = "Resolution on track: " + streak + " day streak.";
+    return `Resolution on track: ${streak} day streak.`;
   }
   else {
-    message = "Resolution failed on day " + (streak + 1) + ": " + streak + " day streak.";
+    return `Resolution failed on day ${streak + 1}: ${streak} day streak.`;
   }
-
-  return message;
 }
