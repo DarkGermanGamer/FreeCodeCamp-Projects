@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Example Survey</h1>
+
+    <p id="description">
+      This is a short survey, created as a certification project to showcase basic HTML knowledge
+    </p>
+
+    <form id="survey-form">
+      <!-- Name field -->
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" name="name" placeholder="Max Mustermann" required>
+      <br />
+
+      <!-- Email field -->
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" name="email" placeholder="MMustermann@fake.org" required>
+      <br />
+
+      <!-- Age field -->
+      <label for="number" id="number-label">Age</label>
+      <input type="number" id="number" name="number" min="0" max="100" placeholder="18">
+      <br />
+      
+      <!-- Dropdown field -->
+      <label for="dropdown">What is this survey about?</label>
+      <select id="dropdown">
+        <option value="nonsense">Nonsense</option>
+        <option value="nothing">Nothing</option>
+      </select>
+      <br />
+
+      <!-- Radio buttons -->
+      <label for="styling">Does this survey need some styling?</label>
+      <label for="yes-option">Yes</label>
+      <input type="radio" id="yes-option" name="styling" value="yes">
+      
+      <label for="def-option">Definitely</label>
+      <input type="radio" id="def-option" name="styling" value="definitely">
+
+      <label for="abs-option">Absolutely</label>
+      <input type="radio" id="abs-option" name="styling" value="absolutely">
+      <br />
+
+      <!-- Checkboxes -->
+      <input type="checkbox" id="human" name="human" value="absolutely">
+      <label for="human">I am not a robot</label>
+
+      <input type="checkbox" id="beep-boop" name="beep-boop" value="absolutely">
+      <label for="beep-boop">I am not not a robot</label>
+      <br />
+
+      <!-- Textarea field -->
+      <label for="comment">Anything else you'd like to say?</label>
+      <textarea id="comment" name="comment">
+      </textarea>
+      <br />
+
+      <!-- Submit button -->
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>

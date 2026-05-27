@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia Player</title>
+</head>
+
+<body>
+    <h1>Working with accessible Audio and Video elements</h1>
+
+    <section>
+      <h2>Sailing Away</h2>
+      
+      <audio aria-label="The song 'Sailing Away'" controls>
+        <source 
+          type="audio/mpeg" 
+          src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3">
+      </audio>
+    </section>
+
+    <section>
+      <h2>What is the map method and how does it work?</h2>
+
+      <video aria-label="A video about the topic: What is the map method" width="300" controls>
+        <source 
+          type="video/mp4" 
+          src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4">
+        
+        <track 
+          src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.vtt" 
+          srclang="en"
+          label="English"
+          kind="subtitles"
+        >
+      </video>
+    </section>
+
+    <section>
+      <h2>Transcript</h2>
+
+      <p>
+        What is the map method and how does it work?
+        <br />
+        The map method is a powerful and widely used function in JavaScript that operates on arrays.
+        <br />
+        It is designed to create a new array by applying a given function to each element of the original array.
+        <br />
+        This method does not modify the original array, but instead returns a new array containing the results of the function applied to each element.
+        <br />
+        Here's an example of using the map method on an array of numbers.
+        <br />
+        To create a new array where each number is doubled, we are using the map method.
+        <br />
+        The map method accepts a callback function where the function is called on every single element in the array.
+        <br />
+        In this case, each number in the array will be multiplied by two.
+        <br />
+        The result will be a new array of the numbers 2, 4, 6, 8, 10.
+        <br />
+        The callback function can accept up to three arguments.
+        <br />
+        The first argument is the current element being processed.
+        <br />
+        The second argument is the index of the current element being processed.
+        <br />
+        The third argument is the array where map is being called on.
+        <br />
+        Understanding and effectively using the map method can significantly improve your ability to work with arrays in JavaScript.
+        <br />
+        In future lecture videos, we'll dive deeper into more advanced uses of map and explore how it can be a powerful tool for building.
+        <br />
+        Dynamic and efficient programs.
+      </p>
+    </section>
+</body>
+
+</html>
