@@ -1,0 +1,26 @@
+body {
+  background-color: #3b3b5f;
+  color
+}
+
+#pad-bank {
+  height: 225px;
+  width: 225px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0px;
+}
+
+.drum-pad {
+  height: 75px;
+  width: 75px;
+  background-color: lightgrey;
+  border: 0.1px solid black
+}
+
+#display {
+  height: 25px;
+  width: 225px;
+  text-align: center;
+  background-color: white
+}

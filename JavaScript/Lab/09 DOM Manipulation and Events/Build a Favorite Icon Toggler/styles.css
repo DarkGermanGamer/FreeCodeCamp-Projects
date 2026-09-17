@@ -1,0 +1,16 @@
+.filled {
+  color: red;
+}
+
+li {
+  border-bottom: 2px dotted blue;
+  margin: 10px 40%;
+  padding: 3px;
+  text-align: center;
+  width: 80px;
+}
+
+button {
+  background-color: white;
+  border: none;
+}
